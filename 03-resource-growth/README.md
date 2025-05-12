@@ -1,41 +1,42 @@
-03 - Resource Growth
+03 - Entity Followers
+This project demonstrates simple agent-based simulation where some entities move freely while others follow them. It’s a foundation for more complex multi-agent systems involving attraction, pursuit, or swarming behavior.
 
-This project simulates resource production and consumption dynamics in a simplified environment. It models entities that generate, consume, and possibly deplete shared resources over time.
+👾 What It Does
+Spawns two types of entities:
 
-🚀 Key Concepts
-Entities: Autonomous agents that consume or generate resources.
+Leaders: Move independently using basic motion rules.
 
-Resource Node: A point in space holding a finite quantity of resources.
+Followers: Constantly chase or follow the nearest leader.
 
-Growth Model: Simulates replenishment or depletion depending on configuration.
+Calculates distances dynamically and updates movement each frame.
 
-Consumption Rules: Entities extract resources when nearby; depletion occurs if consumption exceeds growth.
+Shows how group behavior can emerge from simple rules.
 
-🧠 Educational Purpose
-This simulation demonstrates:
+🧠 Educational Focus
+This simulation illustrates:
 
-Basic resource economy modeling.
+Basic pursuit algorithms.
 
-Interaction between multiple entities and limited resources.
+Distance-based movement.
 
-Environmental feedback loops.
+Real-time coordination of multiple agents.
 
-Visualization of extraction behavior in real time.
+Concepts behind flocking, crowd behavior, and group dynamics.
 
-📊 Visualization Features
-Real-time display of entities and resource levels.
+📈 Visualization Features
+Colored separation between leaders and followers.
 
-Heatmap or color indicators to represent resource density.
+Real-time simulation with play/pause/reset controls.
 
-Live simulation controls (reset, play, speed adjustment).
+Trailing paths to visualize pursuit history.
 
 🛠️ How to Extend
-You can expand the simulation by:
+You can enhance this simulation by:
 
-Introducing multiple resource types.
+Introducing avoidance behaviors (to prevent collisions).
 
-Adding regeneration rules or decay over time.
+Adding randomness or personality to follower behavior.
 
-Assigning agents different strategies or roles (e.g., hoarders vs sharers).
+Implementing flocking algorithms (e.g., Boids).
 
-Connecting it with game theory decision-making or AI planning.
+Allowing dynamic leader switching or multiple targets.
